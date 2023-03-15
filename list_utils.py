@@ -56,9 +56,8 @@ def half_list(list_in: List, half: int) -> List:
     :return: A list.
     """
 
-
-    return
-
+    answer = [list_in[0:math.ceil(len(list_in) / 2)], list_in[math.ceil(len(list_in) // 2):len(list_in)]]
+    return answer[half - 1]
 
 
 
